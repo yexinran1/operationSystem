@@ -24,7 +24,7 @@ int main()
         pid_t childPid = getpid();
         printf("child process: childPid: %d, num : %d\n", childPid, num);
 
-        pid_t parentPid = getpid();
+        pid_t parentPid = getppid();
         printf("child process: parentPid: %d, num : %d\n", parentPid, num);
 
         // while (1)
